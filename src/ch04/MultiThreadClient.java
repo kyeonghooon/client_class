@@ -13,7 +13,7 @@ public class MultiThreadClient {
 		System.out.println("### 클라이언트 실행 ###");
 		Socket socket = null;
 		try {
-			socket = new Socket("192.168.0.132", 5000);
+			socket = new Socket("localhost", 5001);
 			System.out.println("*** connected to the Server ***");
 
 			PrintWriter socketWriter = new PrintWriter(socket.getOutputStream(), true);
